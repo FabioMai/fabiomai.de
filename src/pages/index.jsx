@@ -139,35 +139,28 @@ function Newsletter() {
 function Resume() {
   let resume = [
     {
-      company: 'Planetaria',
-      title: 'CEO',
+      company: 'Netlight Consulting',
+      title: 'Full-stack developer',
       logo: logoPlanetaria,
-      start: '2019',
+      start: '2022',
       end: {
         label: 'Present',
         dateTime: new Date().getFullYear(),
       },
     },
     {
-      company: 'Airbnb',
-      title: 'Product Designer',
+      company: 'Munich University of Applied Sciences',
+      title: 'Expert for digital prototyping',
       logo: logoAirbnb,
-      start: '2014',
-      end: '2019',
+      start: '2020',
+      end: '2022',
     },
     {
-      company: 'Facebook',
-      title: 'iOS Software Engineer',
+      company: 'Objektkultur Software GmbH',
+      title: 'Software Development/ System Integration',
       logo: logoFacebook,
-      start: '2011',
-      end: '2014',
-    },
-    {
-      company: 'Starbucks',
-      title: 'Shift Supervisor',
-      logo: logoStarbucks,
-      start: '2008',
-      end: '2011',
+      start: '2017',
+      end: '2020',
     },
   ]
 
@@ -211,10 +204,10 @@ function Resume() {
           </li>
         ))}
       </ol>
-      <Button href="#" variant="secondary" className="group mt-6 w-full">
+      {/* <Button href="#" variant="secondary" className="group mt-6 w-full">
         Download CV
         <ArrowDownIcon className="h-4 w-4 stroke-zinc-400 transition group-active:stroke-zinc-600 dark:group-hover:stroke-zinc-50 dark:group-active:stroke-zinc-50" />
-      </Button>
+      </Button> */}
     </div>
   )
 }
@@ -251,43 +244,42 @@ export default function Home({ articles }) {
     <>
       <Head>
         <title>
-          Spencer Sharp - Software designer, founder, and amateur astronaut
+          Fabio Maienschein - Portfolio
         </title>
         <meta
           name="description"
-          content="I’m Spencer, a software designer and entrepreneur based in New York City. I’m the founder and CEO of Planetaria, where we develop technologies that empower regular people to explore space on their own terms."
+          content="My name is Fabio, I'm a software developer and entrepreneurship-enthusiast based in Munich.
+          I believe in the value of serendipity and the power of following one's curiosity through creative outlets, which is what I'm documenting here."
         />
       </Head>
       <Container className="mt-9">
         <div className="max-w-2xl">
-          <h1 className="text-4xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-5xl">
-            Software designer, founder, and amateur astronaut.
+          <h1 className="text-3xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-4xl">
+            Exploring the intersection of software development, entrepreneurship and art one project at a time.
           </h1>
           <p className="mt-6 text-base text-zinc-600 dark:text-zinc-400">
-            I’m Spencer, a software designer and entrepreneur based in New York
-            City. I’m the founder and CEO of Planetaria, where we develop
-            technologies that empower regular people to explore space on their
-            own terms.
+            My name is Fabio, I'm a software developer and entrepreneurship-enthusiast based in Munich.
+            I believe in the value of serendipity and the power of following one's curiosity through creative outlets, which is what I'm documenting here.
           </p>
           <div className="mt-6 flex gap-6">
-            <SocialLink
+            {/* <SocialLink
               href="https://twitter.com"
               aria-label="Follow on Twitter"
               icon={TwitterIcon}
-            />
-            <SocialLink
+            /> */}
+            {/* <SocialLink
               href="https://instagram.com"
               aria-label="Follow on Instagram"
               icon={InstagramIcon}
-            />
+            /> */}
             <SocialLink
-              href="https://github.com"
-              aria-label="Follow on GitHub"
+              href="https://github.com/FabioMai"
+              aria-label="Check out on GitHub"
               icon={GitHubIcon}
             />
             <SocialLink
-              href="https://linkedin.com"
-              aria-label="Follow on LinkedIn"
+              href="https://www.linkedin.com/in/fabio-maienschein"
+              aria-label="Connect on LinkedIn"
               icon={LinkedInIcon}
             />
           </div>
@@ -302,7 +294,7 @@ export default function Home({ articles }) {
             ))}
           </div>
           <div className="space-y-10 lg:pl-16 xl:pl-24">
-            <Newsletter />
+            {/* <Newsletter /> */}
             <Resume />
           </div>
         </div>
