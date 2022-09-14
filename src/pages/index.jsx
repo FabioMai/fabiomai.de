@@ -357,10 +357,10 @@ export default function Home({ articles }) {
             and art one project at a time.
           </h1>
           <p className="mt-6 text-base text-zinc-600 dark:text-zinc-400">
-            My name is Fabio, I'm a software developer and
+            My name is Fabio, I&#39;m a software developer and
             entrepreneurship-enthusiast based in Munich. I believe in the value
-            of serendipity and the power of following one's curiosity through
-            creative outlets, which is what I'm documenting here.
+            of serendipity and the power of following one&#39;s curiosity through
+            creative outlets, which is what I&#39;m documenting here.
           </p>
           <div className="mt-6 flex gap-6">
             {/* <SocialLink
