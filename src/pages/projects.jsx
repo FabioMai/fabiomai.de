@@ -3,47 +3,52 @@ import Head from 'next/head'
 
 import { Card } from '@/components/Card'
 import { SimpleLayout } from '@/components/SimpleLayout'
-import logoAnimaginary from '@/images/logos/animaginary.svg'
-import logoCosmos from '@/images/logos/cosmos.svg'
+import logoCityMaps from '@/images/logos/city-maps.svg'
+import logoBiodiversity from '@/images/logos/biodiversity.svg'
 import logoHelioStream from '@/images/logos/helio-stream.svg'
 import logoOpenShuttle from '@/images/logos/open-shuttle.svg'
 import logoPlanetaria from '@/images/logos/planetaria.svg'
 
 const projects = [
   {
-    name: 'Planetaria',
+    name: 'City Maps Europe',
     description:
-      'Creating technology to empower civilians to explore space on their own terms.',
-    link: { href: 'http://planetaria.tech', label: 'planetaria.tech' },
-    logo: logoPlanetaria,
+      'Programmatically generated stylized maps of cities available as high quality prints.',
+    link: { href: 'https://city-maps.eu', label: 'city-maps.eu' },
+    logo: logoCityMaps,
+    tags: ['E-Commerce', 'Print-on-demand', 'Generative Art', 'Python']
   },
   {
-    name: 'Animaginary',
+    name: 'Design Dekor',
     description:
-      'High performance web animation library, hand-written in optimized WASM.',
-    link: { href: '#', label: 'github.com' },
-    logo: logoAnimaginary,
-  },
-  {
-    name: 'HelioStream',
-    description:
-      'Real-time video streaming library, optimized for interstellar transmission.',
-    link: { href: '#', label: 'github.com' },
-    logo: logoHelioStream,
-  },
-  {
-    name: 'cosmOS',
-    description:
-      'The operating system that powers our Planetaria space shuttles.',
-    link: { href: '#', label: 'github.com' },
-    logo: logoCosmos,
-  },
-  {
-    name: 'OpenShuttle',
-    description:
-      'The schematics for the first rocket I designed that successfully made it to orbit.',
-    link: { href: '#', label: 'github.com' },
+      'Fancy decoration pieces made out of wood using a lasercutter.',
+    link: { href: 'https://design-dekor.de', label: 'design-dekor.de' },
     logo: logoOpenShuttle,
+    tags: ['Vector Graphics', 'Laser-Cutting', 'Art', 'Home Decor']
+  },
+  {
+    name: 'Biodiversitaet in Seen',
+    description:
+      'Exploratory visualisation of biodiversity within lakes.',
+    link: { href: 'https://fabiomai.github.io/visualisierung-see/', label: 'github.com' },
+    logo: logoBiodiversity,
+    tags: ['Hackathon', 'Data Visualisation', 'Creative Coding']
+  },
+  {
+    name: 'Triangular Art',
+    description:
+      'Generative art project recreating photos in a polygonal/ triangular style.',
+    link: { href: 'https://www.instagram.com/triangul4rt/', label: 'instagram.com' },
+    logo: logoPlanetaria,
+    tags: ['Generative Art']
+  },
+  {
+    name: 'SAVEDiversity',
+    description:
+      'App idea for a hackathon project around the topic of biodiversity loss and conservation.',
+    link: { href: 'https://savediversity.netlify.app/app', label: 'savediversity.de' },
+    logo: logoPlanetaria,
+    tags: ['Hackathon', 'App Prototyping', 'Figma', 'Landing Page']
   },
 ]
 
@@ -89,7 +94,14 @@ export default function Projects() {
               <h2 className="mt-6 text-base font-semibold text-zinc-800 dark:text-zinc-100">
                 <Card.Link href={project.link.href}>{project.name}</Card.Link>
               </h2>
-              <Card.Description>{project.description}</Card.Description>
+              <Card.Description>
+                {project.description}
+                <div className="flex flex-wrap mt-6 text-xs">
+                  {project.tags.map((tag) => (
+                  <span class="flex-none border-solid border-2 rounded-full px-2 py-0.5">{tag}</span>
+                  ))}
+                </div>
+              </Card.Description>
               <p className="relative z-10 mt-6 flex text-sm font-medium text-zinc-400 transition group-hover:text-teal-500 dark:text-zinc-200">
                 <LinkIcon className="h-6 w-6 flex-none" />
                 <span className="ml-2">{project.link.label}</span>
