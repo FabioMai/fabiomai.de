@@ -11,6 +11,14 @@ import logoPlanetaria from '@/images/logos/planetaria.svg'
 
 const projects = [
   {
+    name: 'precelerator.de',
+    description:
+      'Landing page and event-section of the Precelerator, the Munich University of Applied Sciences Makerspace I have been working for from 2020-2022.',
+    link: { href: 'https://precelerator.de', label: 'precelerator.de' },
+    logo: logoPlanetaria,
+    tags: ['Landing Page', 'Next.js', 'Bootstrap', 'Google Sheets API']
+  },
+  {
     name: 'City Maps Europe',
     description:
       'Programmatically generated stylized maps of cities available as high quality prints.',
@@ -49,6 +57,14 @@ const projects = [
     link: { href: 'https://savediversity.netlify.app/app', label: 'savediversity.de' },
     logo: logoPlanetaria,
     tags: ['Hackathon', 'App Prototyping', 'Figma', 'Landing Page']
+  },
+  {
+    name: 'SAVEDiversity 3D visualisation',
+    description:
+      'App idea for a hackathon project around the topic of biodiversity loss and conservation.',
+    link: { href: 'https://savediversity.netlify.app/demo', label: 'savediversity.de/demo' },
+    logo: logoPlanetaria,
+    tags: ['Hackathon', 'App Prototyping', '3D Design', 'Spline']
   },
 ]
 
@@ -98,7 +114,7 @@ export default function Projects() {
                 {project.description}
                 <div className="flex flex-wrap mt-6 text-xs">
                   {project.tags.map((tag) => (
-                  <span class="flex-none border-solid border-2 rounded-full px-2 py-0.5">{tag}</span>
+                  <span className="flex-none border-solid border-2 rounded-full m-0.5 px-2 py-0.5">{tag}</span>
                   ))}
                 </div>
               </Card.Description>
