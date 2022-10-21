@@ -25,7 +25,7 @@ function Entry({ title, href, children }) {
   )
 }
 
-export default function Uses() {
+export default function Recommendations() {
   return (
     <>
       <Head>
@@ -36,8 +36,8 @@ export default function Uses() {
         />
       </Head>
       <SimpleLayout
-        title="Software I use, gadgets I love, and other things I recommend."
-        intro="I get asked a lot about the things I use to build software, stay productive, or buy to fool myself into thinking I’m being productive when I’m really just procrastinating. Here’s a big list of all of my favorite stuff."
+        title="Projects and work by others I admire."
+        intro="I love recommendations. That's probably why I spend too much time browsing the internet to discover the works of others and to learn from them about their crafts and adjacent creators."
       >
         <div className="space-y-20">
           <RecommendationSection title="Photography">
