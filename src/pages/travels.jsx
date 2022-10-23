@@ -20,7 +20,7 @@ function Appearance({ title, description, event, cta, href }) {
       </Card.Title>
       <Card.Eyebrow decorate>{event}</Card.Eyebrow>
       <Card.Description>{description}</Card.Description>
-      <Card.Cta>{cta}</Card.Cta>
+      {cta !== "" ? <Card.Cta>{cta}</Card.Cta> : <></>}
     </Card>
   )
 }
@@ -60,14 +60,12 @@ export default function Travels() {
           </TravelSection>
           <TravelSection title="Europe">
           <Appearance
-              href="#"
               title="Backpacking Andalusia for 10 days after returning from Canada"
               description="My time in Canada instilled a sense of urgency and travel bug that lead me to use the leftover time I had before my master's to go backpacking in Andalusia."
               event="01/2018"
               cta=""
             />
             <Appearance
-              href="#"
               title="Roadtrip through Finland & Norway after finishing a summer school in Helsinki"
               description="After falling in love with the snowy mountains and crystal clear glacier lakes in Canada, it was only logical to use the opportunity of a summer school offered in Helsinki to go on 4-week roadtrip through the north of Finland and Norway."
               event="08/19 - 09/19"

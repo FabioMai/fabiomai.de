@@ -60,57 +60,71 @@ export default function About() {
             </div>
           </div>
           <div className="lg:order-first lg:row-span-2">
-            <h1 className="text-4xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-5xl">
-              I’m Fabio Maienschein. I'm based in Munich, where I'm working on software products or leverage the internet to explore creative passions of mine.
+            <h1 className="text-4xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-4xl">
+              I’m Fabio Maienschein. I'm based in Munich, where I'm working on
+              software products or leverage the internet to explore creative
+              passions of mine.
             </h1>
             <div className="mt-6 space-y-7 text-base text-zinc-600 dark:text-zinc-400">
               <p>
-                When I was 12 or so, I nagged my dad to get me an email adress of my own I could use to sign up to online services.
-                I've always been fascinated by the opportunity to not only consume some of the best works in certain fields
+                Not all projects are created equal, but all projects big and
+                small can be source of joy and inspiration, which is why in
+                believe in the value of sharing them no matter how tiny.
               </p>
               <p>
-                The only thing I loved more than computers as a kid was space.
-                When I was 8, I climbed the 40-foot oak tree at the back of our
-                yard while wearing my older sister’s motorcycle helmet, counted
-                down from three, and jumped — hoping the tree was tall enough
-                that with just a bit of momentum I’d be able to get to orbit.
+                Most of what I do is driven by intellectual curiosity or
+                creative outbursts - I love reverse-engineering other's work and
+                trying to recreate it from scratch, be it art, programming or
+                design.
               </p>
               <p>
-                I spent the next few summers indoors working on a rocket design,
-                while I recovered from the multiple surgeries it took to fix my
-                badly broken legs. It took nine iterations, but when I was 15 I
-                sent my dad’s Blackberry into orbit and was able to transmit a
-                photo back down to our family computer from space.
+                I consider technical literacy and software development skills a
+                key leverage towards making the world a little better, and
+                invested time into the web app of the student-run campus app
+                HsKampus, a Hackathon project around raising awareness for the
+                importance of biodiversity (SAVEDiversity) as well as discussing implications of Tech
+                and AI as part of ThinkTech.
               </p>
               <p>
-                Today, I’m the founder of Planetaria, where we’re working on
-                civilian space suits and manned shuttle kits you can assemble at
-                home so that the next generation of kids really <em>can</em>{' '}
-                make it to orbit — from the comfort of their own backyards.
+                I'm a sucker for meetups and knowledge sharing, so if you'll
+                most likely run into me into events like that in the Munich area
+                (if you've got recommendations let me know :).
+              </p>
+              <p>
+                I believe in the value of building expertise by teaching and
+                writing which led me to take an advisor position at the
+                Precelerator - the community space for entrepreneurship and
+                prototyping at the Munich university of applied sciences.
+                Working with students and early-stage startups allowed me to
+                practice the skill of breaking down complex technical topics for
+                a beginner audience and communicating tradeoffs regarding
+                choices of technologies.
+              </p>
+              <p>Nowadays I work as a consultant and full-stack developer for <a href="https://www.netlight.com/">Netlight</a>.</p>
+              <p>
+                In my free time I like to make music, draw or create decoration
+                using a lasercutter in a local makerspace.
               </p>
             </div>
           </div>
           <div className="lg:pl-20">
             <ul role="list">
-              <SocialLink href="#" icon={TwitterIcon}>
+              <SocialLink href="https://twitter.com/f_maienschein" icon={TwitterIcon}>
                 Follow on Twitter
               </SocialLink>
-              <SocialLink href="#" icon={InstagramIcon} className="mt-4">
-                Follow on Instagram
-              </SocialLink>
-              <SocialLink href="#" icon={GitHubIcon} className="mt-4">
+              <SocialLink href="https://github.com/FabioMai" icon={GitHubIcon} className="mt-4">
                 Follow on GitHub
               </SocialLink>
-              <SocialLink href="#" icon={LinkedInIcon} className="mt-4">
+              <SocialLink href="https://www.linkedin.com/in/fabio-maienschein/" icon={LinkedInIcon} className="mt-4">
                 Follow on LinkedIn
               </SocialLink>
-              <SocialLink
-                href="mailto:spencer@planetaria.tech"
+              {/* <SocialLink
+                href="mailto:"
                 icon={MailIcon}
                 className="mt-8 border-t border-zinc-100 pt-8 dark:border-zinc-700/40"
               >
-                spencer@planetaria.tech
-              </SocialLink>
+                mail
+              </SocialLink> */}
             </ul>
           </div>
         </div>
