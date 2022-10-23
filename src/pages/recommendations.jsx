@@ -37,26 +37,22 @@ export default function Recommendations() {
       </Head>
       <SimpleLayout
         title="Projects and work by others I admire."
-        intro="I love recommendations. That's probably why I spend too much time browsing the internet to discover the works of others and to learn from them about their crafts and adjacent creators."
+        intro="I love recommendations. That's probably why I spend too much time browsing the internet to discover the works of others and to learn from them about their crafts and adjacent creators. Here are some of my favourites:"
       >
         <div className="space-y-20">
           <RecommendationSection title="Photography">
-            <Entry title="Humans of New York - Brandon Stanton">
+            <Entry title="Humans of New York - Brandon Stanton" href="https://www.humansofnewyork.com/">
               There's something deeply touching about the way Brandon approaches the unfiltered human core of those he meets and photographs and the resulting work clearly shows that. I own both his HONY and Humans book and gifted it to a couple of people because I enjoy it so much.
             </Entry>
-            <Entry title="Christina Mittermeyer">
-              The only display on the market if you want something HiDPI and
-              bigger than 27”. When you’re working at planetary scale, every
-              pixel you can get counts.
+            <Entry title="Christina Mittermeyer" href="https://cristinamittermeier.com/">
+              A wonderful person using her reach as a photographer to drive activism around wildlife conservation.
             </Entry>
-            <Entry title="Ladzinski">
-              They don’t make keyboards the way they used to. I buy these any
-              time I see them go up for sale and keep them in storage in case I
-              need parts or need to retire my main.
+            <Entry title="Keith Ladzinski" href="https://www.ladzinski.com/">
+              Another super down to earth photographer who I may or may not follow especially closely for Insta stories of his dog 🤷‍♂️
             </Entry>
           </RecommendationSection>
           <RecommendationSection title="Crafts">
-            <Entry title="Laser Cut Guy">
+            <Entry title="Philip Roberts" href="https://philip-roberts.com/">
               Up until 2020 I haven't even seen a laser-cutter in my life, but being exposed to his works opened up a world of creative outlets for me (if you think 3D-printing is awesome then think about what cutting wood into any desirable shape within minutes enables you to do!). Without him and his behind the scenes stuff on Instagram I would have never picked up that hobby.
             </Entry>
             <Entry title="Joony Art">
@@ -64,17 +60,17 @@ export default function Recommendations() {
             </Entry>
           </RecommendationSection>
           <RecommendationSection title="Developers/ Designers">
-            <Entry title="Adam Wathan/ Steve Schoger">
+            <Entry title="Adam Wathan/ Steve Schoger" href="https://www.refactoringui.com/">
               Finding good ways to re-use existing code and design artifacts across projects is an interesting challenge, and Adam and Steve went beyond that by creating a reusable CSS Framework based on utility classes (Tailwind CSS) and even productized their solution in an amazing fashion (a masterclass in pre-selling, building in public and so much more). I bought access to their full materials and don't regret supporting them one bit.
             </Entry>
-            <Entry title="Jeff Delaney - Fireship.io">
+            <Entry title="Jeff Delaney - Fireship.io" href="https://fireship.io/">
               Whenever there is a shiny new framework or technology on the horizon, this is where I look for a quick five minute introduction. Jeff's excitement for new tech is ANSTECKEND and his way of breaking down how-to knowledge in conscise bits is inspiring. 
             </Entry>
-            <Entry title="Courtland Allen - Indiehackers.com">
+            <Entry title="Courtland Allen - Indiehackers.com" href="indiehackers.com/start">
               Courtland got into YC as part of STARTUP, but felt like their had to be another way of entrepreneurship that puts developers more into charge of their companies fate than going the venture capital route. He started and grew a now global community of so called indie hackers pursuing entrepreneurship on their own terms. His work inspired me to dedicate my master's thesis to software developers turned indie entrepreneurs.
             </Entry>
           </RecommendationSection>
-          <RecommendationSection title="Books">
+          {/* <RecommendationSection title="Books">
             <Entry title="The way to love">
               It’s not the newest kid on the block but it’s still the fastest.
               The Sublime Text of the application launcher world.
@@ -92,7 +88,7 @@ export default function Recommendations() {
             <Entry title="Brandon Sanderson metal wizard thing">
               Another fantasy universe that I really enjoyed reading when I was younger.
             </Entry>
-          </RecommendationSection>
+          </RecommendationSection> */}
         </div>
       </SimpleLayout>
     </>

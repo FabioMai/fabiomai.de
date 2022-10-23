@@ -44,7 +44,9 @@ export default function About() {
         <title>About - Fabio Maienschein</title>
         <meta
           name="description"
-          content="I’m Fabio Maienschein. I live in New York City, where I design the future."
+          content="I'm based in Munich, where I'm working on
+          software products or leverage the internet to explore creative
+          passions of mine."
         />
       </Head>
       <Container className="mt-16 sm:mt-32">
@@ -61,7 +63,7 @@ export default function About() {
           </div>
           <div className="lg:order-first lg:row-span-2">
             <h1 className="text-4xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-4xl">
-              I’m Fabio Maienschein. I'm based in Munich, where I'm working on
+              I'm based in Munich, where I'm working on
               software products or leverage the internet to explore creative
               passions of mine.
             </h1>

@@ -23,10 +23,6 @@ import logoHska from '@/images/logos/hska.png'
 import logoNetlight from '@/images/logos/netlight.svg'
 import logoHm from '@/images/logos/hm.svg'
 import logoObjektkultur from '@/images/logos/objektkultur.jpg'
-import logoAirbnb from '@/images/logos/airbnb.svg'
-import logoFacebook from '@/images/logos/facebook.svg'
-import logoPlanetaria from '@/images/logos/planetaria.svg'
-import logoStarbucks from '@/images/logos/starbucks.svg'
 import { generateRssFeed } from '@/lib/generateRssFeed'
 import { getAllArticles } from '@/lib/getAllArticles'
 import { formatDate } from '@/lib/formatDate'
@@ -359,8 +355,8 @@ export default function Home({ articles }) {
           <p className="mt-6 text-base text-zinc-600 dark:text-zinc-400">
             My name is Fabio, I&#39;m a software developer and
             entrepreneurship-enthusiast based in Munich. I believe in the value
-            of serendipity and the power of following one&#39;s curiosity through
-            creative outlets, which is what I&#39;m documenting here.
+            of serendipity and the power of following one&#39;s curiosity
+            through creative outlets, which is what I&#39;m documenting here.
           </p>
           <div className="mt-6 flex gap-6">
             {/* <SocialLink
@@ -388,17 +384,18 @@ export default function Home({ articles }) {
       </Container>
       <Photos />
       <Container className="mt-24 md:mt-28">
-        <div className="mx-auto grid max-w-xl grid-cols-1 gap-y-20 lg:max-w-none lg:grid-cols-2">
-          <div className="flex flex-col gap-16">
+        <div className="mx-auto grid max-w-xl grid-cols-1 gap-10 lg:gap-20 lg:max-w-none lg:grid-cols-2">
+        <Resume />
+        <Education />
+          {/* <div className="flex flex-col gap-16">
             {articles.map((article) => (
               <Article key={article.slug} article={article} />
             ))}
           </div>
           <div className="space-y-10 lg:pl-16 xl:pl-24">
-            {/* <Newsletter /> */}
             <Resume />
             <Education />
-          </div>
+          </div> */}
         </div>
       </Container>
     </>
