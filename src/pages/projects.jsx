@@ -3,11 +3,11 @@ import Head from 'next/head'
 
 import { Card } from '@/components/Card'
 import { SimpleLayout } from '@/components/SimpleLayout'
-import logoCityMaps from '@/images/logos/city-maps.svg'
-import logoBiodiversity from '@/images/logos/biodiversity.svg'
-import logoHelioStream from '@/images/logos/helio-stream.svg'
-import logoOpenShuttle from '@/images/logos/open-shuttle.svg'
-import logoPlanetaria from '@/images/logos/planetaria.svg'
+
+import iconCreative from '@/images/icons/creative.svg'
+import iconDesktop from '@/images/icons/desktop.svg'
+import iconMobile from '@/images/icons/phone.svg'
+import iconBuilding from '@/images/icons/building.svg'
 
 const projects = [
   {
@@ -15,7 +15,7 @@ const projects = [
     description:
       'Landing page and event-section of the Precelerator, the Munich University of Applied Sciences Makerspace I have been working for from 2020-2022.',
     link: { href: 'https://precelerator.de', label: 'precelerator.de' },
-    logo: logoPlanetaria,
+    logo: iconDesktop,
     tags: ['Landing Page', 'Next.js', 'Bootstrap', 'Google Sheets API']
   },
   {
@@ -23,7 +23,7 @@ const projects = [
     description:
       'Programmatically generated stylized maps of cities available as high quality prints.',
     link: { href: 'https://city-maps.eu', label: 'city-maps.eu' },
-    logo: logoCityMaps,
+    logo: iconBuilding,
     tags: ['E-Commerce', 'Print-on-demand', 'Generative Art', 'Python']
   },
   {
@@ -31,7 +31,7 @@ const projects = [
     description:
       'Fancy decoration pieces made out of wood using a lasercutter.',
     link: { href: 'https://design-dekor.de', label: 'design-dekor.de' },
-    logo: logoOpenShuttle,
+    logo: iconCreative,
     tags: ['Vector Graphics', 'Laser-Cutting', 'Art', 'Home Decor']
   },
   {
@@ -39,7 +39,7 @@ const projects = [
     description:
       'Exploratory visualisation of biodiversity within lakes.',
     link: { href: 'https://fabiomai.github.io/visualisierung-see/', label: 'github.com' },
-    logo: logoBiodiversity,
+    logo: iconCreative,
     tags: ['Hackathon', 'Data Visualisation', 'Creative Coding']
   },
   {
@@ -47,7 +47,7 @@ const projects = [
     description:
       'Generative art project recreating photos in a polygonal/ triangular style.',
     link: { href: 'https://www.instagram.com/triangul4rt/', label: 'instagram.com' },
-    logo: logoPlanetaria,
+    logo: iconCreative,
     tags: ['Generative Art']
   },
   {
@@ -55,7 +55,7 @@ const projects = [
     description:
       'App idea for a hackathon project around the topic of biodiversity loss and conservation.',
     link: { href: 'https://savediversity.netlify.app/app', label: 'savediversity.de' },
-    logo: logoPlanetaria,
+    logo: iconMobile,
     tags: ['Hackathon', 'App Prototyping', 'Figma', 'Landing Page']
   },
   {
@@ -63,7 +63,7 @@ const projects = [
     description:
       'App idea for a hackathon project around the topic of biodiversity loss and conservation.',
     link: { href: 'https://savediversity.netlify.app/demo', label: 'savediversity.de/demo' },
-    logo: logoPlanetaria,
+    logo: iconMobile,
     tags: ['Hackathon', 'App Prototyping', '3D Design', 'Spline']
   },
 ]
@@ -114,7 +114,7 @@ export default function Projects() {
                 {project.description}
                 <div className="flex flex-wrap mt-6 text-xs">
                   {project.tags.map((tag) => (
-                  <span className="flex-none border-solid border-2 rounded-full m-0.5 px-2 py-0.5">{tag}</span>
+                  <span className="flex-none border-solid border-2 rounded-full m-0.5 px-2 py-0.5" key={tag}>{tag}</span>
                   ))}
                 </div>
               </Card.Description>
