@@ -63,7 +63,7 @@ export default function About() {
           </div>
           <div className="lg:order-first lg:row-span-2">
             <h1 className="text-4xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-4xl">
-              I'm based in Munich, where I'm working on
+              I am based in Munich, where I am working on
               software products or leverage the internet to explore creative
               passions of mine.
             </h1>
@@ -75,7 +75,7 @@ export default function About() {
               </p>
               <p>
                 Most of what I do is driven by intellectual curiosity or
-                creative outbursts - I love reverse-engineering other's work and
+                creative outbursts - I love reverse-engineering others work and
                 trying to recreate it from scratch, be it art, programming or
                 design.
               </p>
@@ -88,9 +88,9 @@ export default function About() {
                 and AI as part of ThinkTech.
               </p>
               <p>
-                I'm a sucker for meetups and knowledge sharing, so if you'll
+                I am a sucker for meetups and knowledge sharing, so if you will
                 most likely run into me into events like that in the Munich area
-                (if you've got recommendations let me know :).
+                (if you have any recommendations let me know :).
               </p>
               <p>
                 I believe in the value of building expertise by teaching and
