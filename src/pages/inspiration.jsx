@@ -25,11 +25,11 @@ function Entry({ title, href, children }) {
   )
 }
 
-export default function Recommendations() {
+export default function Inspiration() {
   return (
     <>
       <Head>
-        <title>Recommendations - Fabio Maienschein</title>
+        <title>Inspiration - Fabio Maienschein</title>
         <meta
           name="description"
           content="Projects and work by others I admire."
@@ -37,7 +37,7 @@ export default function Recommendations() {
       </Head>
       <SimpleLayout
         title="Projects and work by others I admire."
-        intro="I love recommendations. That's probably why I spend too much time browsing the internet to discover the works of others and to learn from them about their crafts and adjacent creators. Here are some of my favourites:"
+        intro="I love to be inspired. That's probably why I spend too much time browsing the internet to discover the works of others and to learn from them about their crafts and adjacent creators. Here are some of my favourites:"
       >
         <div className="space-y-20">
           <RecommendationSection title="Photography">
@@ -64,10 +64,10 @@ export default function Recommendations() {
               Finding good ways to re-use existing code and design artifacts across projects is an interesting challenge, and Adam and Steve went beyond that by creating a reusable CSS Framework based on utility classes (Tailwind CSS) and even productized their solution in an amazing fashion (a masterclass in pre-selling, building in public and so much more). I bought access to their full materials and do not regret supporting them one bit.
             </Entry>
             <Entry title="Jeff Delaney - Fireship.io" href="https://fireship.io/">
-              Whenever there is a shiny new framework or technology on the horizon, this is where I look for a quick five minute introduction. Jeffs excitement for new tech is ANSTECKEND and his way of breaking down how-to knowledge in conscise bits is inspiring. 
+              Whenever there is a shiny new framework or technology on the horizon, this is where I look for a quick five minute introduction. Jeffs excitement for new tech is infectious and his way of breaking down how-to knowledge in conscise bits is inspiring. 
             </Entry>
             <Entry title="Courtland Allen - Indiehackers.com" href="indiehackers.com/start">
-              Courtland got into YC as part of STARTUP, but felt like their had to be another way of entrepreneurship that puts developers more into charge of their companies fate than going the venture capital route. He started and grew a now global community of so called indie hackers pursuing entrepreneurship on their own terms. His work inspired me to dedicate my masters thesis to software developers turned indie entrepreneurs.
+              Courtland got into YC as part of Taskforce, but felt like their had to be another way of entrepreneurship that puts developers more into charge of their companies fate than going the venture capital route. He started and grew a now global community of so called indie hackers pursuing entrepreneurship on their own terms. His work inspired me to dedicate my masters thesis to software developers turned indie entrepreneurs.
             </Entry>
           </RecommendationSection>
           {/* <RecommendationSection title="Books">
