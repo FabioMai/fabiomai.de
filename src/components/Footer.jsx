@@ -27,8 +27,7 @@ export function Footer() {
                 <NavLink href="/inspiration">Inspiration</NavLink>
               </div>
               <p className="text-sm text-zinc-400 dark:text-zinc-500">
-                &copy; {new Date().getFullYear()} Fabio Maienschein. All rights
-                reserved.
+                &copy; {new Date().getFullYear()} Fabio Maienschein
               </p>
             </div>
           </Container.Inner>

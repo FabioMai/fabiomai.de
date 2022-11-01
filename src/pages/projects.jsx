@@ -16,7 +16,7 @@ const projects = [
       'Landing page and event-section of the Precelerator, the Munich University of Applied Sciences Makerspace I have been working for from 2020-2022.',
     link: { href: 'https://precelerator.de', label: 'precelerator.de' },
     logo: iconDesktop,
-    tags: ['Landing Page', 'Next.js', 'Bootstrap', 'Google Sheets API']
+    tags: ['Landing Page', 'Next.js', 'Bootstrap', 'Google Sheets API'],
   },
   {
     name: 'City Maps Europe',
@@ -24,7 +24,7 @@ const projects = [
       'Programmatically generated stylized maps of cities available as high quality prints.',
     link: { href: 'https://city-maps.eu', label: 'city-maps.eu' },
     logo: iconBuilding,
-    tags: ['E-Commerce', 'Print-on-demand', 'Generative Art', 'Python']
+    tags: ['E-Commerce', 'Print-on-demand', 'Generative Art', 'Python'],
   },
   {
     name: 'Design Dekor',
@@ -32,39 +32,50 @@ const projects = [
       'Fancy decoration pieces made out of wood using a lasercutter.',
     link: { href: 'https://design-dekor.de', label: 'design-dekor.de' },
     logo: iconCreative,
-    tags: ['Vector Graphics', 'Laser-Cutting', 'Art', 'Home Decor']
+    tags: ['Vector Graphics', 'Laser-Cutting', 'Art', 'Home Decor'],
   },
   {
     name: 'Biodiversitaet in Seen',
-    description:
-      'Exploratory visualisation of biodiversity within lakes.',
-    link: { href: 'https://fabiomai.github.io/visualisierung-see/', label: 'github.com' },
+    description: 'Exploratory visualisation of biodiversity within lakes.',
+    link: {
+      href: 'https://fabiomai.github.io/visualisierung-see/',
+      label: 'github.com',
+    },
     logo: iconCreative,
-    tags: ['Hackathon', 'Data Visualisation', 'Creative Coding']
+    tags: ['Hackathon', 'Data Visualisation', 'Creative Coding'],
   },
   {
     name: 'Triangular Art',
     description:
       'Generative art project recreating photos in a polygonal/ triangular style.',
-    link: { href: 'https://www.instagram.com/triangul4rt/', label: 'instagram.com' },
+    link: {
+      href: 'https://www.instagram.com/triangul4rt/',
+      label: 'instagram.com',
+    },
     logo: iconCreative,
-    tags: ['Generative Art']
+    tags: ['Generative Art'],
   },
   {
     name: 'SAVEDiversity',
     description:
       'App idea for a hackathon project around the topic of biodiversity loss and conservation.',
-    link: { href: 'https://savediversity.netlify.app/app', label: 'savediversity.de' },
+    link: {
+      href: 'https://savediversity.netlify.app/app',
+      label: 'savediversity.de',
+    },
     logo: iconMobile,
-    tags: ['Hackathon', 'App Prototyping', 'Figma', 'Landing Page']
+    tags: ['Hackathon', 'App Prototyping', 'Figma', 'Landing Page'],
   },
   {
     name: 'SAVEDiversity 3D visualisation',
     description:
       'App idea for a hackathon project around the topic of biodiversity loss and conservation.',
-    link: { href: 'https://savediversity.netlify.app/demo', label: 'savediversity.de/demo' },
+    link: {
+      href: 'https://savediversity.netlify.app/demo',
+      label: 'savediversity.de/demo',
+    },
     logo: iconMobile,
-    tags: ['Hackathon', 'App Prototyping', '3D Design', 'Spline']
+    tags: ['Hackathon', 'App Prototyping', '3D Design', 'Spline'],
   },
 ]
 
@@ -112,9 +123,14 @@ export default function Projects() {
               </h2>
               <Card.Description>
                 {project.description}
-                <div className="flex flex-wrap mt-6 text-xs">
+                <div className="mt-6 flex flex-wrap text-xs">
                   {project.tags.map((tag) => (
-                  <span className="flex-none border-solid border-2 rounded-full m-0.5 px-2 py-0.5" key={tag}>{tag}</span>
+                    <span
+                      className="m-0.5 flex-none rounded-full border-2 border-solid px-2 py-0.5"
+                      key={tag}
+                    >
+                      {tag}
+                    </span>
                   ))}
                 </div>
               </Card.Description>

@@ -63,16 +63,10 @@ export default function About() {
           </div>
           <div className="lg:order-first lg:row-span-2">
             <h1 className="text-4xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-4xl">
-              I am based in Munich, where I am working on
-              software products or leverage the internet to explore creative
-              passions of mine.
+              I am based in Munich, where I am working on software products or
+              leverage the internet to explore creative passions of mine.
             </h1>
             <div className="mt-6 space-y-7 text-base text-zinc-600 dark:text-zinc-400">
-              <p>
-                Not all projects are created equal, but all projects big and
-                small can be source of joy and inspiration, which is why in
-                believe in the value of sharing them no matter how tiny.
-              </p>
               <p>
                 Most of what I do is driven by intellectual curiosity or
                 creative outbursts - I love reverse-engineering others work and
@@ -84,8 +78,8 @@ export default function About() {
                 key leverage towards making the world a little better, and
                 invested time into the web app of the student-run campus app
                 HsKampus, a Hackathon project around raising awareness for the
-                importance of biodiversity (SAVEDiversity) as well as discussing implications of Tech
-                and AI as part of ThinkTech.
+                importance of biodiversity (SAVEDiversity) as well as discussing
+                implications of Tech and AI as part of ThinkTech.
               </p>
               <p>
                 I am a sucker for meetups and knowledge sharing, so if you will
@@ -102,7 +96,10 @@ export default function About() {
                 a beginner audience and communicating tradeoffs regarding
                 choices of technologies.
               </p>
-              <p>Nowadays I work as a consultant and full-stack developer for <a href="https://www.netlight.com/">Netlight</a>.</p>
+              <p>
+                Nowadays I work as a consultant and full-stack developer for{' '}
+                <a href="https://www.netlight.com/">Netlight</a>.
+              </p>
               <p>
                 In my free time I like to make music, draw or create decoration
                 using a lasercutter in a local makerspace.
@@ -111,13 +108,24 @@ export default function About() {
           </div>
           <div className="lg:pl-20">
             <ul role="list">
-              <SocialLink href="https://twitter.com/f_maienschein" icon={TwitterIcon}>
+              <SocialLink
+                href="https://twitter.com/f_maienschein"
+                icon={TwitterIcon}
+              >
                 Follow on Twitter
               </SocialLink>
-              <SocialLink href="https://github.com/FabioMai" icon={GitHubIcon} className="mt-4">
+              <SocialLink
+                href="https://github.com/FabioMai"
+                icon={GitHubIcon}
+                className="mt-4"
+              >
                 Follow on GitHub
               </SocialLink>
-              <SocialLink href="https://www.linkedin.com/in/fabio-maienschein/" icon={LinkedInIcon} className="mt-4">
+              <SocialLink
+                href="https://www.linkedin.com/in/fabio-maienschein/"
+                icon={LinkedInIcon}
+                className="mt-4"
+              >
                 Follow on LinkedIn
               </SocialLink>
               {/* <SocialLink
