@@ -74,14 +74,6 @@ export default function About() {
                 design.
               </p>
               <p>
-                I consider technical literacy and software development skills a
-                key leverage towards making the world a little better, and
-                invested time into the web app of the student-run campus app
-                HsKampus, a Hackathon project around raising awareness for the
-                importance of biodiversity (SAVEDiversity) as well as discussing
-                implications of Tech and AI as part of ThinkTech.
-              </p>
-              <p>
                 I am a sucker for meetups and knowledge sharing, so if you will
                 most likely run into me into events like that in the Munich area
                 (if you have any recommendations let me know :).
@@ -101,7 +93,8 @@ export default function About() {
                 <a href="https://www.netlight.com/">Netlight</a>.
               </p>
               <p>
-                In my free time I like to make music, draw or create decoration
+                In my free time you'll probably find myself making music,
+                drawing, playing spike-ball & frisbee or creating decoration
                 using a lasercutter in a local makerspace.
               </p>
             </div>
@@ -119,14 +112,14 @@ export default function About() {
                 icon={GitHubIcon}
                 className="mt-4"
               >
-                Follow on GitHub
+                Check out GitHub
               </SocialLink>
               <SocialLink
                 href="https://www.linkedin.com/in/fabio-maienschein/"
                 icon={LinkedInIcon}
                 className="mt-4"
               >
-                Follow on LinkedIn
+                Connect on LinkedIn
               </SocialLink>
               {/* <SocialLink
                 href="mailto:"

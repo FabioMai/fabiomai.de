@@ -6,10 +6,7 @@ import clsx from 'clsx'
 import { Button } from '@/components/Button'
 import { Card } from '@/components/Card'
 import { Container } from '@/components/Container'
-import {
-  GitHubIcon,
-  LinkedInIcon,
-} from '@/components/SocialIcons'
+import { GitHubIcon, LinkedInIcon } from '@/components/SocialIcons'
 import image1 from '@/images/photos/image-1.jpg'
 import image2 from '@/images/photos/image-2.jpg'
 import image3 from '@/images/photos/image-3.jpg'
@@ -234,6 +231,7 @@ function Education() {
     </div>
   )
 }
+
 function Resume() {
   let resume = [
     {
@@ -345,46 +343,55 @@ export default function Home({ articles }) {
         />
       </Head>
       <Container className="mt-9">
-        <div className="max-w-2xl">
-          <h1 className="text-3xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-4xl">
-            Exploring the intersection of software development, entrepreneurship
-            and art one project at a time.
-          </h1>
-          <p className="mt-6 text-base text-zinc-600 dark:text-zinc-400">
-            My name is Fabio, I&#39;m a software developer and
-            entrepreneurship-enthusiast based in Munich. I believe in the value
-            of serendipity and the power of following one&#39;s curiosity
-            through creative outlets, which is what I&#39;m documenting here.
-          </p>
-          <div className="mt-6 flex gap-6">
-            {/* <SocialLink
+        <div className="lg:flex lg:items-center">
+          <div className="max-w-xl lg:mr-8">
+            <h1 className="text-3xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-4xl">
+              Exploring the intersection of software development,
+              entrepreneurship and art one project at a time.
+            </h1>
+            <p className="mt-6 text-base text-zinc-600 dark:text-zinc-400">
+              My name is Fabio, I&#39;m a software developer and
+              entrepreneurship-enthusiast based in Munich. I believe in the
+              value of serendipity and the power of following one&#39;s
+              curiosity through creative outlets, which is what I&#39;m
+              documenting here.
+            </p>
+            <div className="mt-6 flex gap-6">
+              {/* <SocialLink
               href="https://twitter.com"
               aria-label="Follow on Twitter"
               icon={TwitterIcon}
             /> */}
-            {/* <SocialLink
+              {/* <SocialLink
               href="https://instagram.com"
               aria-label="Follow on Instagram"
               icon={InstagramIcon}
             /> */}
-            <SocialLink
-              href="https://github.com/FabioMai"
-              aria-label="Check out on GitHub"
-              icon={GitHubIcon}
-            />
-            <SocialLink
-              href="https://www.linkedin.com/in/fabio-maienschein"
-              aria-label="Connect on LinkedIn"
-              icon={LinkedInIcon}
-            />
+              <SocialLink
+                href="https://github.com/FabioMai"
+                aria-label="Check out on GitHub"
+                icon={GitHubIcon}
+              />
+              <SocialLink
+                href="https://www.linkedin.com/in/fabio-maienschein"
+                aria-label="Connect on LinkedIn"
+                icon={LinkedInIcon}
+              />
+            </div>
           </div>
+          <iframe
+            src="https://fabiomai.github.io/flocking/"
+            height="400"
+            width="400"
+            className="hidden lg:inline-flex"
+          ></iframe>
         </div>
       </Container>
       <Photos />
       <Container className="mt-24 md:mt-28">
-        <div className="mx-auto grid max-w-xl grid-cols-1 gap-10 lg:gap-20 lg:max-w-none lg:grid-cols-2">
-        <Resume />
-        <Education />
+        <div className="mx-auto grid max-w-xl grid-cols-1 gap-10 lg:max-w-none lg:grid-cols-2 lg:gap-20">
+          <Resume />
+          <Education />
           {/* <div className="flex flex-col gap-16">
             {articles.map((article) => (
               <Article key={article.slug} article={article} />
