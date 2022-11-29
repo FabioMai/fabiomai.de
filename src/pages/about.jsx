@@ -93,7 +93,7 @@ export default function About() {
                 <a href="https://www.netlight.com/">Netlight</a>.
               </p>
               <p>
-                In my free time you'll probably find myself making music,
+                In my free time you will probably find myself making music,
                 drawing, playing spike-ball & frisbee or creating decoration
                 using a lasercutter in a local makerspace.
               </p>
