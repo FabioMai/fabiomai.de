@@ -1,8 +1,5 @@
-import Image from 'next/future/image'
 import React from 'react'
 import Head from 'next/head'
-
-import { Card } from '@/components/Card'
 import { SimpleLayout } from '@/components/SimpleLayout'
 
 const quotes = [
@@ -22,13 +19,13 @@ const quotes = [
     author: 'E.M. Cioran',
     quoteText:
       '"Society teaches us how to acquire things when it ought to initiate us in the art of letting them go."',
-    tags: ['Material World'],
+    tags: ['Society'],
   },
   {
     author: 'Bill Waterson',
     quoteText:
       '"Creating a life that reflects your values and satisfies your soul is a rare achievement. In a culture that relentlessly promotes avarice and excess as the good life, a person happy doing his own work is usually considered an eccentric, if not a subversive. Ambition is only understood if it is to rise to the top of some imaginary ladder of success. Someone who takes an undemanding job because it affords him the time to pursue other interests and activities is considered a flake. A person who abandons a career in order to stay home and raise children is considered not to be living up to his potential-as if a job title and salary are the sole measure of human worth. You will be told in a hundred ways, some subtle and some not, to keep climbing, and never be satisfied with where you are, who you are, and what you are doing. There are a million ways to sell yourself out, and I guarantee you will hear about them. To invent your own life s meaning is not easy, but it is still allowed, and I think you will be happier for the trouble."',
-    tags: ['Meaning', 'Career'],
+    tags: ['Meaning', 'Work'],
   },
   {
     author: 'Ludwig Wittgenstein',
@@ -614,10 +611,129 @@ const quotes = [
     tags: ['Self'],
   },
   {
+    author: 'Gall`s Law',
+    quoteText:
+      ' A complex system that works is invariably found to have evolved from a simple system that worked. The inverse proposition also appears to be true: A complex system designed from scratch never works and cannot be made to work. You have to start over, beginning with a working simple system. ',
+    tags: ['Work'],
+  },
+  {
+    author: 'Goodhart`s Law',
+    quoteText:
+      '"When a measure becomes a target, it ceases to be a good measure"',
+    tags: ['Work'],
+  },
+  {
+    author: 'Viktor Frankl',
+    quoteText:
+      '“Everything can be taken from a man but one thing: the last of the human freedoms—to choose one’s attitude in any given set of circumstances, to choose one’s own way.”',
+    tags: ['Meaning'],
+  },
+  {
+    author: 'Viktor Frankl',
+    quoteText:
+      '“When we are no longer able to change a situation, we are challenged to change ourselves.”',
+    tags: ['Self'],
+  },
+  {
+    author: 'Viktor Frankl',
+    quoteText:
+      '“Don`t aim at success. The more you aim at it and make it a target, the more you are going to miss it. For success, like happiness, cannot be pursued; it must ensue, and it only does so as the unintended side effect of one`s personal dedication to a cause greater than oneself or as the by-product of one`s surrender to a person other than oneself. Happiness must happen, and the same holds for success: you have to let it happen by not caring about it. I want you to listen to what your conscience commands you to do and go on to carry it out to the best of your knowledge. Then you will live to see that in the long-run—in the long-run, I say!—success will follow you precisely because you had forgotten to think about it”',
+    tags: ['Happiness'],
+  },
+  {
+    author: 'Viktor Frankl',
+    quoteText: '“Those who have a why to live, can bear with almost any how.”',
+    tags: ['Meaning'],
+  },
+  {
+    author: 'Viktor Frankl',
+    quoteText:
+      '“Love is the only way to grasp another human being in the innermost core of his personality. No one can become fully aware of the very essence of another human being unless he loves him. By his love he is enabled to see the essential traits and features in the beloved person; and even more, he sees that which is potential in him, which is not yet actualized but yet ought to be actualized. Furthermore, by his love, the loving person enables the beloved person to actualize these potentialities. By making him aware of what he can be and of what he should become, he makes these potentialities come true.”',
+    tags: ['Love'],
+  },
+  {
+    author: 'Viktor Frankl',
+    quoteText:
+      '“Ultimately, man should not ask what the meaning of his life is, but rather must recognize that it is he who is asked. In a word, each man is questioned by life; and he can only answer to life by answering for his own life; to life he can only respond by being responsible.”',
+    tags: ['Meaning'],
+  },
+  {
+    author: 'Anthony DeMello',
+    quoteText:
+      '“Whenever you are insecure about what may happen in the future, just remember this: In the past six months or one year you were so insecure about events which when they finally came you were able to handle somehow. Thanks to the energy and the resources that that particular present moment gave you, and not to all the previous worrying, which only made you suffer needlessly and weakened you emotionally. So say to yourself: If there is anything I can do about the future, right now, I shall do it. Then I’m going to just leave it alone and settle down to enjoy the present moment, because all the experience of my life has shown me that I can only cope with things when they are present, not before they occur. And that the present always gives me the resources and the energy I need to deal with them.”',
+    tags: ['Perspective'],
+  },
+  {
+    author: 'Anthony DeMello',
+    quoteText:
+      '“Because left to its own devices life would never produce love, it would only lead you to attraction, from attraction to pleasure, then to attachment, to satisfaction, which finally leads to wearisomeness and boredom. Then comes a plateau. Then once again the weary cycle: attraction, pleasure, attachment, fulfillment, satisfaction, boredom. All of this mixed with the anxieties, the jealousies, the possessiveness, the sorrow, the pain, that make the cycle a roller coaster. When you have gone repeatedly around and around the cycle, a time finally comes when you have had enough and want to call a halt to the whole process. And if you are lucky enough not to run into something or someone else that catches your eye, you will have at least attained a fragile peace. That is the most that life can give you; and you can mistakenly equate this state with freedom and you die without ever having known what it means to be really free and to love.”',
+    tags: ['Love'],
+  },
+  {
+    author: 'Anthony DeMello',
+    quoteText:
+      '“You must cultivate activities that you love. You must discover work that you do, not for its utility, but for itself, whether it succeeds or not, whether you are praised for it or not, whether you are loved and rewarded for it or not, whether people know about it and are grateful to you for it or not. How many activities can you count in your life that you engage in simply because they delight you and grip your soul? Find them out, cultivate them, for they are your passport to freedom and to love.”',
+    tags: ['Love', 'Work'],
+  },
+  {
+    author: 'Anthony DeMello',
+    quoteText:
+      '“Love springs from awareness. It is only inasmuch as you see someone as he or she really is here and now, and not as they are in your memory or your desire or in your imagination or projection, that you can truly love them. Otherwise, it is not the person that you love but the idea that you have formed of this person, or this person as the object of your desire, not as he or she is in themselves.”',
+    tags: ['Love'],
+  },
+  {
+    author: 'Alan Watts',
+    quoteText:
+      '“To put is still more plainly: the desire for security and the feeling of insecurity are the same thing. To hold your breath is to lose your breath. A society based on the quest for security is nothing but a breath-retention contest in which everyone is as taut as a drum and as purple as a beet.”',
+    tags: ['Society'],
+  },
+  {
+    author: 'Alan Watts',
+    quoteText:
+      '“But you cannot understand life and its mysteries as long as you try to grasp it. Indeed, you cannot grasp it, just as you cannot walk off with a river in a bucket. If you try to capture running water in a bucket, it is clear that you do not understand it and that you will always be disappointed, for in the bucket the water does not run. To “have” running water you must let go of it and let it run.”',
+    tags: ['Life & Death'],
+  },
+  {
+    author: 'Alan Watts',
+    quoteText:
+      '“Indeed, one of the highest pleasures is to be more or less unconscious of one’s own existence, to be absorbed in interesting sights, sounds, places, and people. Conversely, one of the greatest pains is to be self-conscious, to feel unabsorbed and cut off from the community and the surrounding world.”',
+    tags: ['Self'],
+  },
+  {
+    author: 'Alan Watts',
+    quoteText:
+      '“If happiness always depends on something expected in the future, we are chasing a will-o’-the-wisp that ever eludes our grasp, until the future, and ourselves, vanish into the abyss of death.”',
+    tags: ['Happiness', 'Life & Death'],
+  },
+  {
+    author: 'Mark Manson',
+    quoteText:
+      '“Who you are is defined by what you’re willing to struggle for.”',
+    tags: ['Self'],
+  },
+  {
+    author: 'Dale Carnegie',
+    quoteText:
+      '“It isn`t what you have or who you are or where you are or what you are doing that makes you happy or unhappy. It is what you think about it.”',
+    tags: ['Happiness'],
+  },
+  {
+    author: 'Dale Carnegie',
+    quoteText:
+      '“Personally I am very fond of strawberries and cream, but I have found that for some strange reason, fish prefer worms. So when I went fishing, I didn’t think about what I wanted. I thought about what they wanted. I didn`t bait the hook with strawberries and cream. Rather, I dangled a worm or grasshopper in front of the fish and said: "Wouldn`t you like to have that?" Why not use the same common sense when fishing for people?”',
+    tags: ['Perspective'],
+  },
+  {
+    author: 'Seneca',
+    quoteText:
+      '“If you live in harmony with nature you will never be poor; if you live according what others think, you will never be rich.”',
+    tags: ['Happiness'],
+  },
+  {
     author: 'Marcus Aurelius',
     quoteText:
-      '"You have power over your own mind, not outside events. Realize this, and you will find strength."',
-    tags: ['Perspective'],
+      '“The happiness of your life depends upon the quality of your thoughts.”',
+    tags: ['Happiness'],
   },
 ]
 
@@ -690,7 +806,7 @@ export default function Reading() {
                     'rounded-md px-3 py-2 text-sm font-medium hover:cursor-pointer'
                   )}
                 >
-                  {tag}
+                  {tag} ({quotes.filter((q) => q.tags.includes(tag)).length})
                 </span>
               ))}
           </div>
@@ -705,7 +821,7 @@ export default function Reading() {
               key={quote.quoteText}
             >
               <blockquote className="relative rounded-lg bg-white shadow-lg">
-                <div className="rounded-t-lg px-6 py-8 sm:px-10 sm:pt-10 sm:pb-8">
+                <div className="rounded-t-lg px-6 py-8 sm:px-10 sm:pb-8">
                   <div className="relative mt-8 text-gray-700">
                     <svg
                       className="absolute top-0 left-0 h-8 w-8 -translate-x-3 -translate-y-2 transform text-gray-200"
