@@ -488,13 +488,135 @@ const quotes = [
     tags: ['Self'],
   },
   {
-    author: 'Bei Viktor Frankl weitermachen bis Seneca + Epictetus Kombo',
-    quoteText: '',
+    author: 'Hannah Arendt',
+    quoteText:
+      '“The ideal subject of totalitarian rule is not the convinced Nazi or the convinced communist, but people for whom the distinction between fact and fiction (ie the reality of experience) and the distinction between true and false (ie the standards of thought) no longer exist.”',
+    tags: ['Society'],
+  },
+  {
+    author: 'David Foster Wallace',
+    quoteText:
+      '“...you attain the goal and realize the shocking realization that attaining the goal does not complete or redeem you, does not make everything for your life “OK ” as you are, in the culture, educated to assume it will do this, the goal. And then you face this fact that what you had thought would have the meaning does not have the meaning when you get it, and you are impaled by shock.”',
+    tags: ['Self'],
+  },
+  {
+    author: 'Tao Te Ching',
+    quoteText:
+      '"The Master does his job and then stops. He understands that the universe is forever out of control, and that trying to dominate events goes against the current of the Tao. Because he believes in himself, he doesn`t try to convince others. Because he is content with himself, he doesn`t need others` approval. Because he accepts himself, the whole world accepts him."',
+    tags: ['Self'],
+  },
+  {
+    author: 'Isaac Asimov',
+    quoteText:
+      '“There is a cult of ignorance in the United States, and there always has been. The strain of anti-intellectualism has been a constant thread winding its way through our political and cultural life, nurtured by the false notion that democracy means that ‘my ignorance is just as good as your knowledge.’”',
+    tags: ['Society'],
+  },
+  {
+    author: 'Winston Churchill',
+    quoteText:
+      '“Never give up on something that you can’t go a day without thinking about.”',
+    tags: ['Self'],
+  },
+  {
+    author: 'James Clear',
+    quoteText:
+      '“It is easy to get bogged down trying to find the optimal plan for change: the fastest way to lose weight, the best program to build muscle, the perfect idea for a side hustle. We are so focused on figuring out the best approach that we never get around to taking action”',
+    tags: ['Work'],
+  },
+  {
+    author: 'James Clear',
+    quoteText:
+      '"The only way to become excellent is to be endlessly fascinated by doing the same thing over and over. You have to fall in love with boredom.”',
+    tags: ['Work'],
+  },
+  {
+    author: 'Peter Bieri',
+    quoteText:
+      '"Ausbildung ist stets an einem Nutzen orientiert: Man erwirbt ein Know-how, um etwas zu erreichen. Dagegen ist die Bildung, von der hier die Rede ist, ein Wert in sich, wie die Liebe. Es wäre falsch, zu sagen, sie sei ein Mittel, um glücklich zu sein, denn Glück kann man nicht planvoll ansteuern. Und es ist natürlich auch nicht so, dass es ohne Bildung kein Glück gibt. Aber es gibt Erfahrungen des Glücks, die aufs Engste mit den besprochenen Facetten der Bildung verknüpft sind: die Freude, an der Welt etwas besser zu verstehen; die befreiende Erfahrung, einen Aberglauben abschütteln zu können; das Glück beim Lesen eines Buchs, das einen historischen Korridor öffnet; die Faszination durch einen Film, der zeigt, wie ganz anders das Leben anderswo ist; die beglückende Erfahrung, eine neue Sprache für das eigene Erleben zu lernen; die freudige Überraschung, wenn man sich mit einem Mal besser versteht; die Erlösung, wenn es einem gelingt, eingefahrene Geleise des Erlebens zu verlassen und so mehr Selbstbestimmung zu erfahren; die überraschende Erfahrung, dass sich mit dem Anwachsen der moralischen Sensibilität der innere Radius vergrößert."',
+    tags: ['Wisdom'],
+  },
+  {
+    author: 'Hunter Thompson',
+    quoteText:
+      '"... who is the happier man, he who has braved the storm of life and lived or he who has stayed securely on the shore and merely existed?"',
+    tags: ['Life & Death'],
+  },
+  {
+    author: 'Nietzsche',
+    quoteText:
+      '"the condition of a people which has lost faith in its ancient history and has fallen into a restless [...] and constant search for novelty after novelty."',
+    tags: ['Society'],
+  },
+  {
+    author: 'Nietzsche',
+    quoteText:
+      '"It`s a myth to believe that we will find our authentic self after we have left behind or forgotten one thing or another... To make ourselves, to shape a form from various elements - that is the task! The task of the sculptor! Of a productive human being!"',
+    tags: ['Self'],
+  },
+  {
+    author: 'Nietzsche',
+    quoteText:
+      '"There is a false saying: "How can someone who can`t save himself save others?" Supposing I have the key to your chains, why should your lock and my lock be the same?"',
     tags: ['Perspective'],
   },
   {
-    author: '',
-    quoteText: '',
+    author: 'Nietzsche',
+    quoteText:
+      '"Those who know that they are profound strive for clarity. Those who would like to seem profound to the crowd strive for obscurity. For the crowd believes that if it cannot see to the bottom of something it must be profound. It is so timid and dislikes going into the water."',
+    tags: ['Wisdom'],
+  },
+  {
+    author: 'Epictetus',
+    quoteText:
+      '"Do you envy someone who is popular at work, invited to parties, and spoken of in social circles? If they attract love because of positive character qualities, be glad for them. If they attract attention because of negative character qualities, be glad you don’t share them. Do not expect to equal anyone in effect without putting forth a similar effort. A person who rarely leaves home, who doesn’t converse with, praise, and encourage others, will not attract friends. Everything has its price. If you are unwilling to pay a dollar for lettuce, yet you envy the man who has a bagful of lettuce because he paid five dollars, you are a fool. Do not imagine he has gained an advantage over you—he has his lettuce, you have your coins. So, if you have not been invited to a party, it is because you haven’t paid the price of the invitation."',
+    tags: ['Society'],
+  },
+  {
+    author: 'Epictetus',
+    quoteText:
+      '“Man is not worried by real problems so much as by his imagined anxieties about real problems.”',
+    tags: ['Self'],
+  },
+  {
+    author: 'Epictetus',
+    quoteText:
+      '"How long are you going to wait before you demand the best for yourself and in no instance bypass the discriminations of reason? You have been given the principles that you ought to endorse, and you have endorsed them. What kind of teacher, then, are you still waiting for in order to refer your self-improvement to him? You are no longer a boy but a full-grown man. If you are careless and lazy now and keep putting things off and always deferring the day after which you will attend to yourself, you will not notice that you are making no progress but you will live and die as someone quite ordinary. From now on, then, resolve to live as a grown-up who is making progress, and make whatever you think best a law that you never set aside. And whenever you encounter anything that is difficult or pleasurable or highly or lowly regarded, remember that the contest is now, you are at the Olympic games, you cannot wait any longer, and that your progress is wrecked or preserved by a single day and a single event. This is how Socrates fulfilled himself by attending to nothing except reason in everything he encountered. And you, although you are not yet Socrates, should live as someone who at least wants to be Socrates."',
+    tags: ['Perspective'],
+  },
+  {
+    author: 'Reddit',
+    quoteText:
+      'What if you don`t know what you want to do with your life? `I don`t think the problem you have is not knowing. I think you do know but it may be something really really big and will require a great deal of commitment and time. I`m not saying you aren`t committed and determined, but usually when we think about what we really really want, it would require a complete 360 degree change from what we are doing now and we unconsciously rid ourselves of the possibility of the idea because it`s not `realistic` based on our current circumstances. The truth is that we are asking ourselves a question that no human being can really answer. We are trying to lock down our life to a particular action and direction and then attempt to predict that this will continue to make us happy. Now, if you don`t know what you want I think the first place to look is your childhood, before you were given limitations by others. There is great power in being impressionable as a child since whatever you see or imagine can be a real possibility. Only when children express these ideas to adults or other children, under the influence of adults, do we start building limitations out of a need to be accepted by our friends and family. When I was a kid I saw a man on a motorcycle go down the street and from that day I told myself that I had to have one. I finally got one and became deeply passionate about it (even more) and now I`m pursuing work in the motorcycle industry either through motorcycle gear retailers, motorcycle dealerships, gear manufactures, etc. My dream, my big scary dream is to create a publishing company publishing motorcycle books, obviously making a good living at it. I personally am at a cross-roads as I want to try and pursue this with a strong effort but I have lots of doubts and fears, even though this is what I want I have to figure out if anybody else will want it, will I give my best to make this happen? There are a whole host of other thoughts and concerns that I have also. Most are more likely excuses though. There is something that you really wanted as a child/teen and I think it may hold the answer to your question about figuring out what you want to do with your life. Even if you don`t do it for the rest of your life it can set you on a journey that will lead you to a life you are living by your own choices and decisions and not someone elses, which is far better than most of us are experiencing right now."',
+    tags: ['Perspective'],
+  },
+  {
+    author: 'Soren Kiekegaard',
+    quoteText:
+      '"You can understand life backwards, but must live it forwards."',
+    tags: ['Life & Death'],
+  },
+  {
+    author: 'Theodore Roosevelt',
+    quoteText:
+      '"It is not the critic who counts; not the man who points out how the strong man stumbles, or where the doer of deeds could have done them better. The credit belongs to the man who is actually in the arena, whose face is marred by dust and sweat and blood; who strives valiantly; who errs, who comes short again and again, because there is no effort without error and shortcoming; but who does actually strive to do the deeds; who knows great enthusiasms, the great devotions; who spends himself in a worthy cause; who at the best knows in the end the triumph of high achievement, and who at the worst, if he fails, at least fails while daring greatly, so that his place shall never be with those cold and timid souls who neither know victory nor defeat."',
+    tags: ['Wisdom'],
+  },
+  {
+    author: 'Carl Jung',
+    quoteText:
+      '"One does not become enlightened by imagining figures of light but by making the darkness conscious."',
+    tags: ['Perspective'],
+  },
+  {
+    author: 'Epictetus',
+    quoteText:
+      '"If someone succeeds to provoke you, realize that your mind is complicit in the provocation."',
+    tags: ['Self'],
+  },
+  {
+    author: 'Marcus Aurelius',
+    quoteText:
+      '"You have power over your own mind, not outside events. Realize this, and you will find strength."',
     tags: ['Perspective'],
   },
 ]
