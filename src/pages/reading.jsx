@@ -528,6 +528,12 @@ const quotes = [
     tags: ['Self'],
   },
   {
+    author: 'Kurt von Hammerstein-Equord',
+    quoteText:
+      '"I distinguish four types [of officers]. There are clever, hardworking, stupid, and lazy officers. Usually two characteristics are combined. Some are clever and hardworking; their place is the General Staff. The next ones are stupid and lazy; they make up 90 percent of every army and are suited to routine duties. Anyone who is both clever and lazy is qualified for the highest leadership duties, because he possesses the mental clarity and strength of nerve necessary for difficult decisions. One must beware of anyone who is both stupid and hardworking; he must not be entrusted with any responsibility because he will always only cause damage." ',
+    tags: ['Work'],
+  },
+  {
     author: 'James Clear',
     quoteText:
       '“It is easy to get bogged down trying to find the optimal plan for change: the fastest way to lose weight, the best program to build muscle, the perfect idea for a side hustle. We are so focused on figuring out the best approach that we never get around to taking action”',
@@ -943,7 +949,7 @@ export default function Reading() {
             {[...new Set(quotes.map((q) => q.tags).flat(1))]
               .sort()
               .map((tag) => (
-                <option key={tag}>
+                <option key={tag} value={tag}>
                   {tag} ({quotes.filter((q) => q.tags.includes(tag)).length})
                 </option>
               ))}

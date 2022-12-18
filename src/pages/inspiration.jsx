@@ -41,33 +41,78 @@ export default function Inspiration() {
       >
         <div className="space-y-20">
           <RecommendationSection title="Photography">
-            <Entry title="Humans of New York - Brandon Stanton" href="https://www.humansofnewyork.com/">
-              There is something deeply touching about the way Brandon approaches the unfiltered human core of those he meets and photographs and the resulting work clearly shows that. I own both his HONY and Humans book and gifted it to a couple of people because I enjoy it so much.
+            <Entry
+              title="Humans of New York - Brandon Stanton"
+              href="https://www.humansofnewyork.com/"
+            >
+              There is something deeply touching about the way Brandon
+              approaches the unfiltered human core of those he meets and
+              photographs and the resulting work clearly shows that. I own both
+              his HONY and Humans book and gifted it to a couple of people
+              because I enjoy it so much.
             </Entry>
-            <Entry title="Christina Mittermeyer" href="https://cristinamittermeier.com/">
-              A wonderful person using her reach as a photographer to drive activism around wildlife conservation.
+            <Entry
+              title="Christina Mittermeyer"
+              href="https://cristinamittermeier.com/"
+            >
+              A wonderful person using her reach as a photographer to drive
+              activism around wildlife conservation.
             </Entry>
             <Entry title="Keith Ladzinski" href="https://www.ladzinski.com/">
-              Another super down to earth photographer who I may or may not follow especially closely for Insta stories of his dog 🤷‍♂️
+              Another super down to earth photographer who I may or may not
+              follow especially closely for Insta stories of his dog 🤷‍♂️
             </Entry>
           </RecommendationSection>
           <RecommendationSection title="Crafts">
             <Entry title="Philip Roberts" href="https://philip-roberts.com/">
-              Up until 2020 I have never even seen a laser-cutter in my life, but being exposed to his works opened up a world of creative outlets for me (if you think 3D-printing is awesome then think about what cutting wood into any desirable shape within minutes enables you to do!). Without him and his behind the scenes stuff on Instagram I would have never picked up that hobby.
+              Up until 2020 I have never even seen a laser-cutter in my life,
+              but being exposed to his works opened up a world of creative
+              outlets for me (if you think 3D-printing is awesome then think
+              about what cutting wood into any desirable shape within minutes
+              enables you to do!). Without him and his behind the scenes stuff
+              on Instagram I would have never picked up that hobby.
             </Entry>
             <Entry title="Joony Art">
-              I have never been much of an artist, in fact I do not think my drawing skills ever went beyond elementary school level. Somehow I ended up with some some acrylic colors and stumbled upon the Joony Art channel on Youtube, making for another very relaxing hobby.
+              I have never been much of an artist, in fact I do not think my
+              drawing skills ever went beyond elementary school level. Somehow I
+              ended up with some some acrylic colors and stumbled upon the Joony
+              Art channel on Youtube, making for another very relaxing hobby.
             </Entry>
           </RecommendationSection>
           <RecommendationSection title="Developers/ Designers">
-            <Entry title="Adam Wathan/ Steve Schoger" href="https://www.refactoringui.com/">
-              Finding good ways to re-use existing code and design artifacts across projects is an interesting challenge, and Adam and Steve went beyond that by creating a reusable CSS Framework based on utility classes (Tailwind CSS) and even productized their solution in an amazing fashion (a masterclass in pre-selling, building in public and so much more). I bought access to their full materials and do not regret supporting them one bit.
+            <Entry
+              title="Adam Wathan/ Steve Schoger"
+              href="https://www.refactoringui.com/"
+            >
+              Finding good ways to re-use existing code and design artifacts
+              across projects is an interesting challenge, and Adam and Steve
+              went beyond that by creating a reusable CSS Framework based on
+              utility classes (Tailwind CSS) and even productized their solution
+              in an amazing fashion (a masterclass in pre-selling, building in
+              public and so much more). I bought access to their full materials
+              and do not regret supporting them one bit.
             </Entry>
-            <Entry title="Jeff Delaney - Fireship.io" href="https://fireship.io/">
-              Whenever there is a shiny new framework or technology on the horizon, this is where I look for a quick five minute introduction. Jeffs excitement for new tech is infectious and his way of breaking down how-to knowledge in conscise bits is inspiring. 
+            <Entry
+              title="Jeff Delaney - Fireship.io"
+              href="https://fireship.io/"
+            >
+              Whenever there is a shiny new framework or technology on the
+              horizon, this is where I look for a quick five minute
+              introduction. Jeffs excitement for new tech is infectious and his
+              way of breaking down how-to knowledge in conscise bits is
+              inspiring.
             </Entry>
-            <Entry title="Courtland Allen - Indiehackers.com" href="indiehackers.com/start">
-              Courtland got into YC as part of Taskforce, but felt like their had to be another way of entrepreneurship that puts developers more into charge of their companies fate than going the venture capital route. He started and grew a now global community of so called indie hackers pursuing entrepreneurship on their own terms. His work inspired me to dedicate my masters thesis to software developers turned indie entrepreneurs.
+            <Entry
+              title="Courtland Allen - Indiehackers.com"
+              href="https://indiehackers.com/start"
+            >
+              Courtland got into YC as part of Taskforce, but felt like their
+              had to be another way of entrepreneurship that puts developers
+              more into charge of their companies fate than going the venture
+              capital route. He started and grew a now global community of so
+              called indie hackers pursuing entrepreneurship on their own terms.
+              His work inspired me to dedicate my masters thesis to software
+              developers turned indie entrepreneurs.
             </Entry>
           </RecommendationSection>
           {/* <RecommendationSection title="Books">
