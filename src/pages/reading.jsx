@@ -7,7 +7,7 @@ const quotes = [
     author: 'Arthur Schopenhauer',
     quoteText:
       '“When we read, another person thinks for us: we merely repeat his mental process. In learning to write, the pupil goes over with his pen what the teacher has outlined in pencil: so in reading; the greater part of the work of thought is already done for us. This is why it relieves us to take up a book after being occupied with our own thoughts. And in reading, the mind is, in fact, only the playground of another’s thoughts. So it comes about that if anyone spends almost the whole day in reading, and by way of relaxation devotes the intervals to some thoughtless pastime, he gradually loses the capacity for thinking; just as the man who always rides, at last forgets how to walk. This is the case with many learned persons: they have read themselves stupid.”',
-    tags: ['Reading', 'Learning'],
+    tags: ['Learning'],
   },
   {
     author: 'Whole Earth Catalogue Opening Statement',
@@ -72,7 +72,7 @@ const quotes = [
     author: 'Epictetus',
     quoteText:
       '"If you now neglect things and are lazy and are always making delay after delay and set one day after another as the day for paying attention to yourself, then without realizing it you will make no progress but will end up a non-philosopher all through life and death. So decide now that you are worthy of living as a full-grown man who is making progress, and make everything that seems best to be a law that you cannot go against. And if you meet with any hardship or anything pleasant or reputable or disreputable, then remember that the contest is now... and you cannot put things off anymore and that your progress made or destroyed by a single day and a single action."',
-    tags: ['Discipline'],
+    tags: ['Self'],
   },
   {
     author: 'Douglas Malloch',
@@ -330,11 +330,6 @@ const quotes = [
     tags: ['Work'],
   },
   {
-    author: 'Unknown',
-    quoteText: '"You can`t direct the wind, but you can adjust your sails."',
-    tags: ['Perspective'],
-  },
-  {
     author: 'Maya Angelou',
     quoteText:
       '“If you don’t like something, change it. If you can’t change it, change your attitude.”',
@@ -405,6 +400,24 @@ const quotes = [
     quoteText:
       '"Don’t ask people what they want. Watch them and figure out their needs. If you ask, people usually focus on what they have and ask for it to be better: cheaper, faster, smaller. A good observer might discover that the task is unnecessary, that it is possible to restructure things or provide a new technology that eliminates the painstaking parts of their procedures. If you just follow what people ask for, you could end up making their lives even more complicated."',
     tags: ['Work'],
+  },
+  {
+    author: 'Don Norman',
+    quoteText:
+      '“Design is really an act of communication, which means having a deep understanding of the person with whom the designer is communicating.”',
+    tags: ['Work'],
+  },
+  {
+    author: 'Don Norman',
+    quoteText:
+      '“Good design is actually a lot harder to notice than poor design, in part because good designs fit our needs so well that the design is invisible”',
+    tags: ['Work'],
+  },
+  {
+    author: 'Don Norman',
+    quoteText:
+      '“The idea that a person is at fault when something goes wrong is deeply entrenched in society. That’s why we blame others and even ourselves. Unfortunately, the idea that a person is at fault is imbedded in the legal system. When major accidents occur, official courts of inquiry are set up to assess the blame. More and more often the blame is attributed to “human error.” The person involved can be fined, punished, or fired. Maybe training procedures are revised. The law rests comfortably. But in my experience, human error usually is a result of poor design: it should be called system error. Humans err continually; it is an intrinsic part of our nature. System design should take this into account. Pinning the blame on the person may be a comfortable way to proceed, but why was the system ever designed so that a single act by a single person could cause calamity? Worse, blaming the person without fixing the root, underlying cause does not fix the problem: the same error is likely to be repeated by someone else.”',
+    tags: ['Society'],
   },
   {
     author: 'Unknown',
@@ -735,6 +748,144 @@ const quotes = [
       '“The happiness of your life depends upon the quality of your thoughts.”',
     tags: ['Happiness'],
   },
+  {
+    author: 'Rob Fitzpatrick',
+    quoteText:
+      '“It boils down to this: you aren’t allowed to tell them what their problem is, and in return, they aren’t allowed to tell you what to build. They own the problem, you own the solution.”',
+    tags: ['Entrepreneurship'],
+  },
+  {
+    author: 'Rob Fitzpatrick',
+    quoteText:
+      '“The world’s most deadly fluff is: “I would definitely buy that.” It just sounds so concrete. As a founder, you desperately want to believe it’s money in the bank. But folks are wildly optimistic about what they would do in the future. They’re always more positive, excited, and willing to pay in the imagined future than they are once it arrives.',
+    tags: ['Entrepreneurship'],
+  },
+  {
+    author: 'Rob Fitzpatrick',
+    quoteText:
+      '“Talk about their life instead of your idea. Ask about specifics in the past instead of generics or opinions about the future. Talk less and listen more. It’s called The Mom Test because it leads to questions that even your mom can’t lie to you about.”',
+    tags: ['Entrepreneurship'],
+  },
+  {
+    author: 'Ben Horowitz',
+    quoteText:
+      '“Every time I read a management or self-help book, I find myself saying, “That’s fine, but that wasn’t really the hard thing about the situation.” The hard thing isn’t setting a big, hairy, audacious goal. The hard thing is laying people off when you miss the big goal. The hard thing isn’t hiring great people. The hard thing is when those “great people” develop a sense of entitlement and start demanding unreasonable things. The hard thing isn’t setting up an organizational chart. The hard thing is getting people to communicate within the organization that you just designed. The hard thing isn’t dreaming big. The hard thing is waking up in the middle of the night in a cold sweat when the dream turns into a nightmare.”',
+    tags: ['Entrepreneurship'],
+  },
+  {
+    author: 'Ben Horowitz',
+    quoteText:
+      '“Build a culture that rewards—not punishes—people for getting problems into the open where they can be solved.”',
+    tags: ['Entrepreneurship'],
+  },
+  {
+    author: 'Ben Horowitz',
+    quoteText:
+      '“Hard things are hard because there are no easy answers or recipes. They are hard because your emotions are at odds with your logic. They are hard because you don’t know the answer and you cannot ask for help without showing weakness.”',
+    tags: ['Entrepreneurship'],
+  },
+  {
+    author: 'Ben Horowitz',
+    quoteText:
+      '“Early in my career as an engineer, I’d learned that all decisions were objective until the first line of code was written. After that, all decisions were emotional.”',
+    tags: ['Work'],
+  },
+  {
+    author: 'Ben Horowitz',
+    quoteText:
+      '“Most business relationships either become too tense to tolerate or not tense enough to be productive after a while. Either people challenge each other to the point where they don’t like each other or they become complacent about each other’s feedback and no longer benefit from the relationship.”',
+    tags: ['Work'],
+  },
+  {
+    author: 'Ben Horowitz',
+    quoteText:
+      '“How can we walk away from requirements that we know to be true to pursue something that we think will help?” It turns out that is exactly what product strategy is all about—figuring out the right product is the innovator’s job, not the customer’s job.”',
+    tags: ['Entrepreneurship'],
+  },
+  {
+    author: 'Steven Pressfield',
+    quoteText:
+      '“If you find yourself asking yourself (and your friends), "Am I really a writer? Am I really an artist?" chances are you are. The counterfeit innovator is wildly self-confident. The real one is scared to death.”',
+    tags: ['Art'],
+  },
+  {
+    author: 'Steven Pressfield',
+    quoteText:
+      '“Are you paralyzed with fear? That’s a good sign. Fear is good. Like self-doubt, fear is an indicator. Fear tells us what we have to do. Remember one rule of thumb: the more scared we are of a work or calling, the more sure we can be that we have to do it.”',
+    tags: ['Work', 'Art'],
+  },
+  {
+    author: 'Steven Pressfield',
+    quoteText:
+      '“Our job in this life is not to shape ourselves into some ideal we imagine we ought to be, but to find out who we already are and become it.”',
+    tags: ['Self'],
+  },
+  {
+    author: 'Steven Pressfield',
+    quoteText:
+      '“This is the other secret that real artists know and wannabe writers don’t. When we sit down each day and do our work, power concentrates around us. The Muse takes note of our dedication. She approves. We have earned favor in her sight. When we sit down and work, we become like a magnetized rod that attracts iron filings. Ideas come. Insights accrete.”',
+    tags: ['Art'],
+  },
+  {
+    author: 'Steven Pressfield',
+    quoteText:
+      '“We fear discovering that we are more than we think we are. More than our parents/children/teachers think we are. We fear that we actually possess the talent that our still, small voice tells us. That we actually have the guts, the perseverance, the capacity. We fear that we truly can steer our ship, plant our flag, reach our Promised Land. We fear this because, if it’s true, then we become estranged from all we know. We pass through a membrane. We become monsters and monstrous.”',
+    tags: ['Self', 'Art'],
+  },
+  {
+    author: 'Marty Kagan',
+    quoteText:
+      '“Finally, it’s all about solving problems, not implementing features. Conventional product roadmaps are all about output. Strong teams know it’s not only about implementing a solution. They must ensure that solution solves the underlying problem. It’s about business results.”',
+    tags: ['Work'],
+  },
+  {
+    author: 'Rob Walling',
+    quoteText:
+      '“The genius of niches is they are too small for large competitors, allowing a nimble entrepreneur the breathing room to focus on an underserved audience. Once you’ve succeeded in that niche, you can leverage your success to establish credibility for your business to move into larger markets.”',
+    tags: ['Entrepreneurship'],
+  },
+  {
+    author: 'Jason Fried',
+    quoteText:
+      '“What you do is what matters, not what you think or say or plan.”',
+    tags: ['Work'],
+  },
+  {
+    author: 'Benjamin Hoff',
+    quoteText:
+      '“The surest way to become Tense, Awkward, and Confused is to develop a mind that tries too hard - one that thinks too much.”',
+    tags: ['Self'],
+  },
+  {
+    author: 'Benjamin Hoff',
+    quoteText:
+      '“Things just happen in the right way, at the right time. At least when you let them, when you work with circumstances instead of saying, `This isn`t supposed to be happening this way,` and trying harder to make it happen some other way.”',
+    tags: ['Happiness'],
+  },
+  {
+    author: 'Benjamin Hoff',
+    quoteText:
+      '“If people were superior to animals, they´d take good care of them," said Pooh.”',
+    tags: ['Society'],
+  },
+  {
+    author: 'Benjamin Hoff',
+    quoteText:
+      '“The play-it-safe pessimists of the world never accomplish much of anything, because they don´t look clearly and objectively at situations, they don´t recognize or believe in their own abilities to overcome even the smallest amount of risk.”',
+    tags: ['Society'],
+  },
+  {
+    author: 'Jonathan Safran Foer',
+    quoteText:
+      '“While it is always possible to wake a person who`s sleeping, no amount of noise will wake a person who is pretending to be asleep. [...] Not responding is a response - we are equally responsible for what we don`t do.”',
+    tags: ['Society'],
+  },
+  {
+    author: 'Jonathan Safran Foer',
+    quoteText:
+      '“And nothing inspires as much shame as being a parent. Children confront us with our paradoxes and hypocrisies, and we are exposed. You need to find an answer for every why — Why do we do this? Why don’t we do that? — and often there isn’t a good one. So you say, simply, because. Or you tell a story that you know isn’t true. And whether or not your face reddens, you blush. The shame of parenthood — which is a good shame — is that we want our children to be more whole than we are, to have satisfactory answers.”',
+    tags: ['Wisdom'],
+  },
 ]
 
 function classNames(...classes) {
@@ -745,7 +896,7 @@ export default function Reading() {
   const [filter, setFilter] = React.useState('')
 
   function handleClick(tag) {
-    if (tag === filter) {
+    if (tag === filter || tag === null) {
       setFilter('')
     } else {
       setFilter(tag)
@@ -781,13 +932,20 @@ export default function Reading() {
           <select
             id="tabs"
             name="tabs"
-            onClick={() => handleClick(tag)}
-            className="block w-full rounded-md border-gray-300 focus:border-indigo-500 focus:ring-indigo-500"
+            onChange={(e) => handleClick(e.target.value)}
+            defaultValue={'default'}
+            className="block w-full rounded-md border border-gray-300 p-2 focus:border-teal-200 focus:ring-teal-200"
           >
+            <option disabled value="default">
+              {' '}
+              Select a category{' '}
+            </option>
             {[...new Set(quotes.map((q) => q.tags).flat(1))]
               .sort()
               .map((tag) => (
-                <option key={tag}>{tag}</option>
+                <option key={tag}>
+                  {tag} ({quotes.filter((q) => q.tags.includes(tag)).length})
+                </option>
               ))}
           </select>
         </div>
@@ -817,14 +975,14 @@ export default function Reading() {
         >
           {getFilteredQuotes(quotes).map((quote) => (
             <div
-              className="relative mx-auto mb-4 max-w-prose break-inside-avoid-column text-base lg:max-w-none"
+              className="relative mx-auto mb-4 max-w-prose break-inside-avoid-column rounded-md border border-gray-200 text-base lg:max-w-none"
               key={quote.quoteText}
             >
-              <blockquote className="relative rounded-lg bg-white shadow-lg">
+              <blockquote className="relative rounded-lg shadow-lg">
                 <div className="rounded-t-lg px-6 py-8 sm:px-10 sm:pb-8">
-                  <div className="relative mt-8 text-gray-700">
+                  <div className="relative mt-8 text-zinc-600 dark:text-zinc-400">
                     <svg
-                      className="absolute top-0 left-0 h-8 w-8 -translate-x-3 -translate-y-2 transform text-gray-200"
+                      className="absolute top-0 left-0 h-8 w-8 -translate-x-3 -translate-y-2 transform text-gray-200 dark:text-zinc-800"
                       fill="currentColor"
                       viewBox="0 0 32 32"
                       aria-hidden="true"
