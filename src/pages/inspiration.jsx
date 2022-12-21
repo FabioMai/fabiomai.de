@@ -103,6 +103,16 @@ export default function Inspiration() {
               inspiring.
             </Entry>
             <Entry
+              title="Paul Graham - YCombinator"
+              href="http://www.paulgraham.com/articles.html"
+            >
+              I got to learn of Paul Graham through Hacker News, the tech forum
+              of the tech incubator YCombinator. Paul's essays about the startup
+              game, personal development and musings about art and the human
+              nature have always been fascinating and I highly recommend
+              checking them out.{' '}
+            </Entry>
+            <Entry
               title="Courtland Allen - Indiehackers.com"
               href="https://indiehackers.com/start"
             >

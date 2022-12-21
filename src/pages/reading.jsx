@@ -900,8 +900,9 @@ function classNames(...classes) {
 
 export default function Reading() {
   const [filter, setFilter] = React.useState('')
+  const [searchText, setSearchText] = React.useState('')
 
-  function handleClick(tag) {
+  function handleFilterClick(tag) {
     if (tag === filter || tag === null) {
       setFilter('')
     } else {
@@ -909,11 +910,32 @@ export default function Reading() {
     }
   }
 
-  function getFilteredQuotes(quotes) {
-    if (filter === '') {
-      return quotes
+  function handleSearchTextChange(text) {
+    if (!text) {
+      setFilter('')
     } else {
+      setSearchText(text.toLowerCase())
+    }
+  }
+
+  function getFilteredQuotes(quotes) {
+    if (filter === '' && searchText === '') {
+      return quotes
+    } else if (filter != '' && searchText === '') {
       return quotes.filter((quote) => quote.tags.includes(filter))
+    } else if (filter === '' && searchText != '') {
+      return quotes.filter(
+        (quote) =>
+          quote.author.toLowerCase().includes(searchText) ||
+          quote.quoteText.toLowerCase().includes(searchText)
+      )
+    } else {
+      return quotes.filter(
+        (quote) =>
+          quote.tags.includes(filter) &&
+          (quote.author.toLowerCase().includes(searchText) ||
+            quote.quoteText.toLowerCase().includes(searchText))
+      )
     }
   }
 
@@ -938,7 +960,7 @@ export default function Reading() {
           <select
             id="tabs"
             name="tabs"
-            onChange={(e) => handleClick(e.target.value)}
+            onChange={(e) => handleFilterClick(e.target.value)}
             defaultValue={'default'}
             className="block w-full rounded-md border border-gray-300 p-2 focus:border-teal-200 focus:ring-teal-200"
           >
@@ -962,7 +984,7 @@ export default function Reading() {
               .map((tag) => (
                 <span
                   key={tag}
-                  onClick={() => handleClick(tag)}
+                  onClick={() => handleFilterClick(tag)}
                   className={classNames(
                     tag === filter
                       ? 'bg-teal-100 text-teal-700'
@@ -970,11 +992,30 @@ export default function Reading() {
                     'rounded-md px-3 py-2 text-sm font-medium hover:cursor-pointer'
                   )}
                 >
-                  {tag} ({quotes.filter((q) => q.tags.includes(tag)).length})
+                  {tag} (
+                  {
+                    (tag === filter
+                      ? getFilteredQuotes(quotes).filter((quote) =>
+                          quote.tags.includes(tag)
+                        )
+                      : quotes.filter(
+                          (quote) =>
+                            quote.tags.includes(tag) &&
+                            (quote.author.includes(searchText) ||
+                              quote.quoteText.includes(searchText))
+                        )
+                    ).length
+                  }
+                  )
                 </span>
               ))}
           </div>
         </div>
+        <input
+          className="mt-4 w-full rounded-md border p-2 px-3 py-2 text-sm font-medium text-gray-500"
+          placeholder="Search for author or keyword..."
+          onChange={(e) => handleSearchTextChange(e.target.value)}
+        ></input>
         <ul
           role="list"
           className="mt-4 gap-4 divide-y divide-gray-200 md:columns-2 lg:columns-3"
@@ -995,14 +1036,28 @@ export default function Reading() {
                     >
                       <path d="M9.352 4C4.456 7.456 1 13.12 1 19.36c0 5.088 3.072 8.064 6.624 8.064 3.36 0 5.856-2.688 5.856-5.856 0-3.168-2.208-5.472-5.088-5.472-.576 0-1.344.096-1.536.192.48-3.264 3.552-7.104 6.624-9.024L9.352 4zm16.512 0c-4.8 3.456-8.256 9.12-8.256 15.36 0 5.088 3.072 8.064 6.624 8.064 3.264 0 5.856-2.688 5.856-5.856 0-3.168-2.304-5.472-5.184-5.472-.576 0-1.248.096-1.44.192.48-3.264 3.456-7.104 6.528-9.024L25.864 4z" />
                     </svg>
-                    <p className="relative">{quote.quoteText}</p>
+                    <p
+                      className="quote-text relative"
+                      dangerouslySetInnerHTML={{
+                        __html: quote.quoteText.replace(
+                          new RegExp(searchText, 'gi'),
+                          (match) => `<mark>${match}</mark>`
+                        ),
+                      }}
+                    ></p>
                   </div>
                 </div>
                 <cite className="relative flex items-center rounded-b-lg bg-teal-100 py-5 px-6 not-italic sm:py-5 sm:pl-12 sm:pr-10">
                   <span className="relative leading-6">
-                    <span className=" text-sm text-teal-700">
-                      {quote.author}
-                    </span>
+                    <span
+                      className="author-name text-sm text-teal-700"
+                      dangerouslySetInnerHTML={{
+                        __html: quote.author.replace(
+                          new RegExp(searchText, 'gi'),
+                          (match) => `<mark>${match}</mark>`
+                        ),
+                      }}
+                    ></span>
                   </span>
                 </cite>
               </blockquote>
