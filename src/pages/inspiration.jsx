@@ -107,7 +107,7 @@ export default function Inspiration() {
               href="http://www.paulgraham.com/articles.html"
             >
               I got to learn of Paul Graham through Hacker News, the tech forum
-              of the tech incubator YCombinator. Paul's essays about the startup
+              of the tech incubator YCombinator. Pauls essays about the startup
               game, personal development and musings about art and the human
               nature have always been fascinating and I highly recommend
               checking them out.{' '}
